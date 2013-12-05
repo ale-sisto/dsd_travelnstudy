@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{817A477E-98E8-4A88-A826-6D98D4488FD0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudyAbroad.BusinessLogic</RootNamespace>
+    <AssemblyName>StudyAbroad.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C5">
+      <HintPath>..\packages\MyMediaLite\C5.dll</HintPath>
+    </Reference>
+    <Reference Include="MyMediaLite, Version=3.6.4732.32808, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MyMediaLite\MyMediaLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClimateClassification\ClimateUtilities.cs" />
+    <Compile Include="Core\ReviewBusinessLogic.cs" />
+    <Compile Include="Core\SearchEngineBusinessLogic.cs" />
+    <Compile Include="Core\UserBusinessLogic.cs" />
+    <Compile Include="CostOfLife\CostOfLife.cs" />
+    <Compile Include="Framework\DBHandler.cs" />
+    <Compile Include="Factories\BLLFactory.cs" />
+    <Compile Include="Framework\BusinessLogic.cs" />
+    <Compile Include="RecommendationSystem\RecommendationSystem.cs" />
+    <Compile Include="RecommendationSystem\Utils\RatingEntry.cs" />
+    <Compile Include="Resources\Files.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Files.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SuggestionSystem\Enums\ParametersEnum.cs" />
+    <Compile Include="SuggestionSystem\Enums\InstanceStatusEnum.cs" />
+    <Compile Include="SuggestionSystem\Factories\QuestionFactory.cs" />
+    <Compile Include="SearchEngine\Enums\SearchedBy.cs" />
+    <Compile Include="SearchEngine\Factories\SearchEngineFactory.cs" />
+    <Compile Include="SearchEngine\Framework\ISearch.cs" />
+    <Compile Include="SearchEngine\Framework\SearchEngine.cs" />
+    <Compile Include="SearchEngine\SearchLocation.cs" />
+    <Compile Include="SearchEngine\SearchResult.cs" />
+    <Compile Include="SearchEngine\SearchUtilites\FuzzySearch.cs" />
+    <Compile Include="SearchEngine\SearchUtilites\LevenshteinDistance.cs" />
+    <Compile Include="SuggestionSystem\Filters\ClimateFilter.cs" />
+    <Compile Include="SuggestionSystem\Filters\CostOfLifeFilter.cs" />
+    <Compile Include="SuggestionSystem\Filters\CourseLevelFilter.cs" />
+    <Compile Include="SuggestionSystem\Filters\NoFilter.cs" />
+    <Compile Include="SuggestionSystem\Filters\RegionFilter.cs" />
+    <Compile Include="SuggestionSystem\Filters\StudyAreasFilter.cs" />
+    <Compile Include="SuggestionSystem\Questions\ClimateQuestion.cs" />
+    <Compile Include="SuggestionSystem\Questions\CostOfLifeQuestion.cs" />
+    <Compile Include="SuggestionSystem\Questions\CourseLevelQuestion.cs" />
+    <Compile Include="SuggestionSystem\Questions\RegionQuestion.cs" />
+    <Compile Include="SuggestionSystem\Questions\StudyAreaQuestion.cs" />
+    <Compile Include="SuggestionSystem\Utils\Explanation.cs" />
+    <Compile Include="SuggestionSystem\Utils\ExplanationCollection.cs" />
+    <Compile Include="SuggestionSystem\Utils\HistoryItem.cs" />
+    <Compile Include="SuggestionSystem\Utils\QuestionResponse.cs" />
+    <Compile Include="SuggestionSystem\Framework\IFilter.cs" />
+    <Compile Include="Framework\ODSMInterface.cs" />
+    <Compile Include="Framework\ORMInterface.cs" />
+    <Compile Include="Core\LocationBusinessLogic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\UniversityBusinessLogic.cs" />
+    <Compile Include="SuggestionSystem\Enums\QuestionIdentifierEnum.cs" />
+    <Compile Include="SuggestionSystem\Filters\ContinentFilter.cs" />
+    <Compile Include="SuggestionSystem\Framework\IQuestion.cs" />
+    <Compile Include="SuggestionSystem\Framework\Parameter.cs" />
+    <Compile Include="SuggestionSystem\Framework\ParameterCollection.cs" />
+    <Compile Include="SuggestionSystem\Utils\QuestionRequest.cs" />
+    <Compile Include="SuggestionSystem\Utils\Instance.cs" />
+    <Compile Include="SuggestionSystem\SuggestionSystem.cs" />
+    <Compile Include="SuggestionSystem\Utils\InstanceState.cs" />
+    <Compile Include="SuggestionSystem\Questions\ContinentQuestion.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StudyAbroad.DataAccess\StudyAbroad.DataAccess.csproj">
+      <Project>{941014b3-a58f-4479-b845-066dd0c0200b}</Project>
+      <Name>StudyAbroad.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudyAbroad.DomainModel\StudyAbroad.DomainModel.csproj">
+      <Project>{1a234d3f-ec5c-4f27-80c7-b6fb41371b50}</Project>
+      <Name>StudyAbroad.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudyAbroad.DynamicLoading\StudyAbroad.DynamicLoading.csproj">
+      <Project>{ff28200c-5966-4416-9162-8a1adf864f7d}</Project>
+      <Name>StudyAbroad.DynamicLoading</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Files.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Files.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CostIndices.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="StudyAbroad.[Presentation.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Study Abroad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/studyabroad_logo.ico" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+    <link rel="styleSheet" href="css/site.css" type="text/css" />
+    <link type="text/css" href="css/jquery-ui-1.9.1.custom.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>   
+    <form runat="server">     
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.2.js'></script>
+    <script type='text/javascript' src='http://code.jquery.com/ui/1.9.1/jquery-ui.js'></script>
+    <script src="/Scripts/JQuery.PageMethod.Call.Helper.min.js"></script> 
+    <asp:ScriptManager ID="ScriptManager" runat="server" EnableCdn="True" />
+    
+    <div id= "wrap">
+		<div class= "container">
+			<div id="title">
+	  			<h2>Study Abroad <small>Find the right university for you!</small></h2>
+				<a class="pull-right"><i class="icon-book"></i> Register</a>
+				<a class="pull-right"><i class="icon-user"></i> Login</a>
+	  		</div>
+
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class= "nav">
+		      			<li id="Home"><a href="/default.aspx">Home</a></li>
+		      			<li id="Suggestion"><a href="#">Suggestion</a></li>
+		      			<li id="Exploration"><a href="/explore.aspx">Exploration</a></li>
+		      			<li id="About"><a href="#">About</a></li>
+		    		</ul>
+		    		<div class="navbar-form pull-right">
+						<input type="text" class="search-query" placeholder="Search" />
+						<button class="btn btn-inverse"type="submit">Search</button>
+					</div>
+	    		</div> <!-- navbar-inner end -->
+			</div> <!-- navbar end -->
+
+			<!-- INSERT CODE HERE -->
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+			<!-- END PAGE CODE -->
+
+		</div> <!-- container end --> 
+		<div id="push"></div> <!-- Used to stick footer to the bottom -->
+	</div> <!-- Wrap end -->
+		<div id="footer">
+	    <div class="container">
+	    <p class="muted">Dsd course project! [we can put some footer info] 2012</p>
+	    </div>	
+	</div> <!--footer end -->
+		
+
+	<!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="scripts/bootstrap.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {            
+
+            var sURL = $(location).attr('pathname');
+            var sPage = sURL.substring(sURL.lastIndexOf('/') + 1);            
+            $('.nav li a').each(function () {
+                var href = $(this).attr('href');
+                var tPage = href.substring(href.lastIndexOf('/') + 1);                
+                if (sURL.match(tPage)) {                    
+                    $(this).parent().addClass('active');                    
+                }
+            });
+        });
+
+    </script>
+
+    </form>
+</body>
+</html>

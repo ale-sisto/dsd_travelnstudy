@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="StudyAbroad.Presentation.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Travel 'n Study</title>
+    <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css' />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/studyabroad_logo.ico" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+    <link type="text/css" href="css/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+    <link rel="styleSheet" href="css/site.css" type="text/css" />    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>   
+      
+        <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.2.js'></script>
+        <script type='text/javascript' src='http://code.jquery.com/ui/1.9.1/jquery-ui.js'></script>
+        <script src="/Scripts/JQuery.PageMethod.Call.Helper.min.js"></script> 
+        <script type="text/javascript" src="/scripts/common.js"></script>
+        <script src="/scripts/bootstrap.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+                var sURL = $(location).attr('pathname');
+                var sPage = sURL.substring(sURL.lastIndexOf('/') + 1);
+                $('.nav li a').each(function () {
+                    var href = $(this).attr('href');
+                    var tPage = href.substring(href.lastIndexOf('/') + 1);
+                    if (sURL.match(tPage)) {
+                        $(this).parent().addClass('active');
+                    }
+                });
+
+                $("#main").keypress(function (e) {
+                    if (e.which == 13) {
+                        var tagName = e.target.tagName.toLowerCase();
+                        if (tagName !== "submit" && e.target.id !== 'txtSearch') {
+                            return false;
+                        }
+                    }
+                });
+            });
+
+        </script>
+    <form id="main" runat="server">   
+       <asp:ScriptManager ID="ScriptManager" runat="server" EnableCdn="True" />
+   	             
+        <div class="navbar navbar-static-top">  
+            <div class="navbar-inner">
+                <a class="brand" href="/default.aspx"><img id="logo" src="/images/studyabroad_logo.png" /></a>
+                <ul class="nav">
+                   <li class="divider-vertical"></li>
+                    <li class=""><a class="" href="/suggestion.aspx">Suggestion</a></li>
+                <li class=""><a href="/explore.aspx">Explore</a></li>
+                </ul>
+                
+                <span id="menu-item" class="pull-right">
+                 
+                     <asp:LoginView ID="LoginView" runat="server" ViewStateMode="Disabled" EnableViewState="False" >
+                        <AnonymousTemplate>
+                        <ul class="nav">
+                             <li><a class="login" id="registerLink" runat="server"  href="~/Account/Register.aspx"><i class="icon-pencil icon-white"></i> Register</a></li>
+                             <li><a class="login" id="loginLink" runat="server"  href="~/Account/Login.aspx"><i class="icon-user icon-white"></i> Log in</a></li>    
+                        </ul>
+                        </AnonymousTemplate>
+                        <RoleGroups>
+                        <asp:RoleGroup Roles="Admin">
+                           <ContentTemplate>
+                               <p class="brand">Welcome, <asp:LoginName ID="LoginName" runat="server"/>! </p>
+                                <ul class="nav">
+                                    <li class="divider-vertical"></li>
+                                    <li><a id="profileLink" runat="server" href="~/Account/Profile.aspx" title="Manage your profile">Profile</a></li>
+                                    <li><a id="manageLink" runat="server" href="~/Account/Manage.aspx" title="Manage users">Manage</a></li>
+                                    <li><asp:LoginStatus ID="LoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Logout" LogoutPageUrl="~/"></asp:LoginStatus></li>
+                                </ul>
+                           </ContentTemplate>
+                        </asp:RoleGroup>
+                        <asp:RoleGroup Roles="User">
+                            <ContentTemplate>
+                               <p id="welcome" class="brand">Welcome, <asp:LoginName ID="LoginName" runat="server"/>! </p>
+                                 <ul class="nav">
+                                    
+                                   <li><a id="profileLink" runat="server" href="~/Account/Profile.aspx" title="Manage your profile">Profile</a></li>
+                                    <li><asp:LoginStatus ID="LoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Logout" LogoutPageUrl="~/" />
+                                    </li>
+                                </ul>
+                            </ContentTemplate>
+                        </asp:RoleGroup>
+                    </RoleGroups>
+                         			
+                    </asp:LoginView>   
+                    <input type="text" name="q" class="search-query" id="txtSearch" />
+                    <asp:Button CssClass="btn btn-inverse" runat="server" Text="Search" ID="btnSearch" PostBackUrl="~/search.aspx" OnClientClick="javascript: if($.trim( $('#txtSearch').val() ) == '' )return false;" CausesValidation="false" />                 
+                </span>
+            </div>
+		</div> <!-- navbar end -->
+
+        <div id="global-header">
+            <h1>Travel 'n Study</h1>
+        </div>
+           
+         
+		<!-- INSERT CODE HERE -->
+        <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+		<!-- END PAGE CODE -->
+
+    </form>
+
+	<div id="push"></div> <!-- Used to stick footer to the bottom -->
+	<div id="footer">
+        
+	    <div class="container">
+            
+            <div id="b-menu">
+            <ul  class="nav nav-pills">  
+                <li class=""><a class="" href="/default.aspx">Homepage</a></li>   
+                <li class=""><a class="" href="/suggestion.aspx">Suggestion</a></li>
+                <li class=""><a href="/explore.aspx">Explore</a></li>
+                <li class=""><a href="/about.aspx">About</a></li>
+
+            </ul>
+            </div>
+
+	        <p class="muted">Travel 'n Study is developed by a joint team of FER and POLIMI students.<br /> 
+                This project is made for the Distributed Software Development [DSD] Course 2012/2013.</p>
+	    </div>	
+	 </div> <!--footer end -->
+
+</body>
+</html>

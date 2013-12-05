@@ -1,0 +1,92 @@
+10
+
+dir
+14641
+svn://lapis.rasip.fer.hr/svn/dsd12/StudyAbroad/trunk/Code/StudyAbroad_Latest/StudyAbroad.BusinessLogic
+svn://lapis.rasip.fer.hr/svn
+
+
+
+2013-01-14T18:10:10.176061Z
+14352
+drogora
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4ebb4fe7-ff5e-4d1a-9baf-b639f71a6d04
+
+Factories
+dir
+
+StudyAbroad.BusinessLogic.csproj
+file
+
+
+
+
+2013-01-12T08:49:16.000000Z
+f0303a4d58c7030dfd2bba59091e5bff
+2013-01-11T12:03:13.905994Z
+14143
+bl43417
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7361
+
+Core
+dir
+
+RecommendationSystem
+dir
+
+ClimateClassification
+dir
+
+Resources
+dir
+
+SearchEngine
+dir
+
+Properties
+dir
+
+SuggestionSystem
+dir
+
+Framework
+dir
+
+CostOfLife
+dir
+

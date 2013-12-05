@@ -1,0 +1,80 @@
+10
+
+dir
+14641
+svn://lapis.rasip.fer.hr/svn/dsd12/StudyAbroad/trunk/Code/StudyAbroad_Latest/StudyAbroad.BusinessLogic/SuggestionSystem
+svn://lapis.rasip.fer.hr/svn
+
+
+
+2013-01-11T15:17:01.459415Z
+14154
+bl43417
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4ebb4fe7-ff5e-4d1a-9baf-b639f71a6d04
+
+Factories
+dir
+
+Utils
+dir
+
+SuggestionSystem.cs
+file
+
+
+
+
+2013-01-12T08:49:16.000000Z
+a360bba0f7a01abca292bf785dd8c2fd
+2013-01-11T15:17:01.459415Z
+14154
+bl43417
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6266
+
+Enums
+dir
+
+Filters
+dir
+
+Questions
+dir
+
+Framework
+dir
+

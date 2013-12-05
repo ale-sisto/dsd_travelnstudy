@@ -1,0 +1,14 @@
+#map_div path {
+stroke-width:2; /* control the countries borders width */
+stroke:#6699cc; /* choose a color for the border */
+cursor:pointer; /* display the pointer when the map hovers the map. */
+}
+
+#map_div path:hover {
+fill:blue;
+}
+
+#city_link {
+
+    color:yellow;
+}

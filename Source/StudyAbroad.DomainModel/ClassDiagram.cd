@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StudyAbroad.DomainModel.Core.City" Collapsed="true">
+    <Position X="1.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\City.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Core.CityUSA" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Core\CityUSA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Core.CityWorld" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\CityWorld.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Core.Comments" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAABAAAAAAAAAIAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Comments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Core.Continent" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Continent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Core.Country" Collapsed="true">
+    <Position X="14" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Country.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Core.Location" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAQQAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Core\Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Core.Region" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Region.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Core.State" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\State.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Core.University" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\University.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Core.Uri" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAACAAAAAAAQAgAAAAAAAA=</HashCode>
+      <FileName>Core\Uri.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Core.User" Collapsed="true">
+    <Position X="20.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAQAAAQQABAAAAAAAAAICAAAAAAA=</HashCode>
+      <FileName>Core\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Exceptions.DomainModelNoDataException" Collapsed="true">
+    <Position X="25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\DomainModelNoDataException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Exceptions.DomainModelValidationException" Collapsed="true">
+    <Position X="26.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\DomainModelValidationException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Framework.DomainBase&lt;T&gt;" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAABAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>Framework\DomainBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Mappings.CommentsMap" Collapsed="true">
+    <Position X="26.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\CommentsMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Mappings.LocationMap" Collapsed="true">
+    <Position X="28.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\LocationMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Mappings.CityUSAMap" Collapsed="true">
+    <Position X="23.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\LocationMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Mappings.CityWorldMap" Collapsed="true">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\LocationMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Mappings.CountryMap" Collapsed="true">
+    <Position X="23.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\LocationMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Mappings.StateMap" Collapsed="true">
+    <Position X="25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\LocationMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Mappings.RegionMap" Collapsed="true">
+    <Position X="23.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\LocationMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Mappings.ContinentMap" Collapsed="true">
+    <Position X="28.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\LocationMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Mappings.UniversityMap" Collapsed="true">
+    <Position X="26.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\LocationMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyAbroad.DomainModel.Mappings.UserMap" Collapsed="true">
+    <Position X="28.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappings\UserMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="StudyAbroad.DomainModel.Enums.InfoCategoryEnum" Collapsed="true">
+    <Position X="23.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAwEA=</HashCode>
+      <FileName>Enums\InfoCategoryEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StudyAbroad.DomainModel.Enums.InfoDomainEnum" Collapsed="true">
+    <Position X="25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\InfoDomainEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

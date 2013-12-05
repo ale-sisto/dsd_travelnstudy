@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC8962B1-215D-4C33-BAD9-2DA2ECCE38B2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudyAbroad.Console</RootNamespace>
+    <AssemblyName>StudyAbroad.Console</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Apis">
+      <HintPath>..\packages\GoogleApi\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Freebase.v1">
+      <HintPath>..\packages\GoogleApi\Google.Apis.Freebase.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Net35">
+      <HintPath>..\packages\NewtonsoftJson3.5\Newtonsoft.Json.Net35.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StudyAbroad.BusinessLogic\StudyAbroad.BusinessLogic.csproj">
+      <Project>{817a477e-98e8-4a88-a826-6d98d4488fd0}</Project>
+      <Name>StudyAbroad.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudyAbroad.DataAccess\StudyAbroad.DataAccess.csproj">
+      <Project>{941014b3-a58f-4479-b845-066dd0c0200b}</Project>
+      <Name>StudyAbroad.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudyAbroad.DomainModel\StudyAbroad.DomainModel.csproj">
+      <Project>{1a234d3f-ec5c-4f27-80c7-b6fb41371b50}</Project>
+      <Name>StudyAbroad.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudyAbroad.DynamicLoading\StudyAbroad.DynamicLoading.csproj">
+      <Project>{ff28200c-5966-4416-9162-8a1adf864f7d}</Project>
+      <Name>StudyAbroad.DynamicLoading</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudyAbroad.Presentation\StudyAbroad.Presentation.csproj">
+      <Project>{2dd3abc4-bd82-49d2-98d9-4a18f6806c19}</Project>
+      <Name>StudyAbroad.Presentation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

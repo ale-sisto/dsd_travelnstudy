@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Collection>
+<root>
+	<row>
+		<Name>Meal, Inexpensive Restaurant </Name>
+		<Category>Restaurants</Category>
+		<CpiFactor_>19,8</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Meal for 2, Mid-range Restaurant, Three-course</Name>
+		<Category>Restaurants</Category>
+		<CpiFactor_>6</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Combo Meal at McDonalds or Similar</Name>
+		<Category>Restaurants</Category>
+		<CpiFactor_>6,6</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Domestic Beer (0.5 liter draught)</Name>
+		<Category>Restaurants</Category>
+		<CpiFactor_>12</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Imported Beer (0.33 liter bottle)</Name>
+		<Category>Restaurants</Category>
+		<CpiFactor_>12</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Coke/Pepsi (0.33 liter bottle)</Name>
+		<Category>Restaurants</Category>
+		<CpiFactor_>12</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Water (0.33 liter bottle)</Name>
+		<Category>Restaurants</Category>
+		<CpiFactor_>12</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Milk (regular), 1 liter</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>22</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Loaf of Fresh White Bread (500g)</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>24</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Eggs (12)</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>20</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Local Cheese (1kg)</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>10</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Water (1.5 liter bottle)</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>30</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Bottle of Wine (Mid-Range)</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>4</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Domestic Beer (0.5 liter bottle)</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>6</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Imported Beer (0.33 liter bottle)</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>6</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Pack of Cigarettes (Marlboro)</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>15</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>One-way Ticket (Local Transport)</Name>
+		<Category>Transportation</Category>
+		<CpiFactor_>20</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Monthly Pass (Regular Price)</Name>
+		<Category>Transportation</Category>
+		<CpiFactor_>1,5</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Apples (1kg)</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>30</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Apartment (1 bedroom) in City Centre</Name>
+		<Category>Rent Per Month</Category>
+		<CpiFactor_>0</CpiFactor_>
+		<RentFactor_>0,25</RentFactor_>
+	</row>
+	<row>
+		<Name>Apartment (1 bedroom) Outside of Centre</Name>
+		<Category>Rent Per Month</Category>
+		<CpiFactor_>0</CpiFactor_>
+		<RentFactor_>0,25</RentFactor_>
+	</row>
+	<row>
+		<Name>Apartment (3 bedrooms) in City Centre</Name>
+		<Category>Rent Per Month</Category>
+		<CpiFactor_>0</CpiFactor_>
+		<RentFactor_>0,25</RentFactor_>
+	</row>
+	<row>
+		<Name>Apartment (3 bedrooms) Outside of Centre</Name>
+		<Category>Rent Per Month</Category>
+		<CpiFactor_>0</CpiFactor_>
+		<RentFactor_>0,25</RentFactor_>
+	</row>
+	<row>
+		<Name>Basic (Electricity, Gas, Water, Garbage) for 85m2 Apartment</Name>
+		<Category>Utilities (Monthly)</Category>
+		<CpiFactor_>1</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>1 min. of Prepaid Mobile Tariff Local (No Discounts or Plans)</Name>
+		<Category>Utilities (Monthly)</Category>
+		<CpiFactor_>6</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Internet (6 Mbps, Unlimited Data, Cable/ADSL)</Name>
+		<Category>Utilities (Monthly)</Category>
+		<CpiFactor_>1</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Gasoline (1 liter)</Name>
+		<Category>Transportation</Category>
+		<CpiFactor_>80</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Fitness Club, Monthly Fee for 1 Adult</Name>
+		<Category>Sports And Leisure</Category>
+		<CpiFactor_>2,3</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Tennis Court Rent (1 Hour on Weekend)</Name>
+		<Category>Sports And Leisure</Category>
+		<CpiFactor_>5</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Cinema, International Release, 1 Seat</Name>
+		<Category>Sports And Leisure</Category>
+		<CpiFactor_>7</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Chicken Breasts (Boneless, Skinless), (1kg)</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>20</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)</Name>
+		<Category>Transportation</Category>
+		<CpiFactor_>0,008</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>1 Pair of Jeans (Levis 501 Or Similar)</Name>
+		<Category>Clothing And Shoes</Category>
+		<CpiFactor_>0,6</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>1 Summer Dress in a Chain Store (Zara, H&amp;M, ...)</Name>
+		<Category>Clothing And Shoes</Category>
+		<CpiFactor_>0,6</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>1 Pair of Nike Shoes</Name>
+		<Category>Clothing And Shoes</Category>
+		<CpiFactor_>0,6</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>1 Pair of Men Leather Shoes</Name>
+		<Category>Clothing And Shoes</Category>
+		<CpiFactor_>0,6</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Taxi Start (Normal Tariff)</Name>
+		<Category>Transportation</Category>
+		<CpiFactor_>12</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Taxi 1km (Normal Tariff)</Name>
+		<Category>Transportation</Category>
+		<CpiFactor_>60</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Oranges (1kg) </Name>
+		<Category>Markets</Category>
+		<CpiFactor_>30</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Potato (1kg)   </Name>
+		<Category>Markets</Category>
+		<CpiFactor_>20</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Lettuce (1 head)</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>15</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Cappuccino (regular)</Name>
+		<Category>Restaurants</Category>
+		<CpiFactor_>30</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Rice (1kg)</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>12</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+	<row>
+		<Name>Tomato (1kg)</Name>
+		<Category>Markets</Category>
+		<CpiFactor_>20</CpiFactor_>
+		<RentFactor_>0</RentFactor_>
+	</row>
+</root>
+</Collection>

@@ -1,0 +1,445 @@
+﻿
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+    height: 100%;
+    padding: 0px;
+    /* The html and body elements cannot have any padding or margin. */
+}
+   	
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+
+#push,
+#footer {
+    height: 60px;
+
+}
+
+/* MASTER PAGE */
+
+#global-header {
+    
+     
+    /*background-color:#3f3f3f;*/
+    margin: 0;
+    padding-top:100px;
+    padding: 10px;
+    /*height: 130px; */
+}
+
+ #global-header h1 {
+        font-family:/* 'Architects Daughter', cursive; */ 'Rock Salt', cursive;
+        margin-top:45px;
+        font-size:80px;
+        padding-left:10px;
+    }
+
+#menu-item {
+    margin:0;
+    padding:0;
+}
+#menu-item .login {
+    padding-right:10px;
+    padding-left:10px;
+    margin:0;
+  
+    }
+
+#menu-item input.search-query {
+    margin-top:9px;
+    }
+
+#welcome {
+    margin:0;
+}
+
+#logo {
+    width: 50px;
+    margin:0;
+    margin-top:-20px;
+    margin-bottom:-13px;
+}
+
+#b-menu {
+    text-align:center;
+}
+
+    #b-menu ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    #b-menu li {
+        float:left;
+    }
+
+#footer p {
+    margin-top:15px;
+    text-align: center;
+}
+
+/*About page */
+#aboutContent img {
+    max-height:225px;;
+    margin-bottom:30px;
+}
+
+#aboutContent .desc {
+    font-size: 15px;
+}
+
+#aboutContent h3 {
+    margin-top:0px;
+}
+
+#aboutContent dt {
+    margin-top:20px;
+    display:inline;
+}
+
+#aboutContent dd {
+
+    display:inline;
+}
+
+
+
+/*Exploration Page*/
+
+#ajax_loading {
+    margin-right: 10px;
+}
+
+#map_div {
+    left: auto;
+    right: auto;
+}
+
+#explore_map {
+    left: auto;
+    right: auto;
+}
+
+#mapBread {
+    background:white;
+}
+
+/* Search */
+#searchResult h3.result {
+    padding-top:10px;
+    display:inline;
+}
+
+#searchResult img {
+    height:50px;
+    width:50px;
+    margin-right:10px;
+    display:inline;
+}
+
+#pagination {
+    margin-left:20px;
+}
+
+/* HOME PAGE */
+
+#button-menu a{
+    margin-top: 40px;
+    height: 45px;
+    padding-top:10px;
+    margin-left:-60px;
+    font-size:18px;
+    font-weight:bold;
+
+}
+
+    #button-menu a:hover {
+        margin-left:-30px;
+    }
+
+
+
+#pageTitle {
+    border-bottom:2px solid #555;
+    margin:30px 60px;
+    padding:0;
+}
+
+    #pageTitle h1 {
+        font-size:50px;
+        margin:0;
+        padding:0;
+    }
+
+#subTitle {
+    margin-top: -30px;
+    margin-right: 70px;
+    text-align:right;
+}
+
+    #subTitle h2 {
+        color:#555;
+    }
+
+    #subTitle a {
+        color:#555;
+    }
+
+
+#recom .image {
+    height:120px;
+}
+
+#rec_row {
+    text-align:center;
+}
+
+#recom .nomargin {
+    margin:10px;
+}
+
+.container div.row#topUni {
+    display:none;
+}
+
+
+#Stage {
+    margin-bottom:60px;
+    line-height:60px;
+    line-height:initial;
+}
+
+#Stage #Stage_introducing {
+
+    line-height:30px;
+    line-height:initial;
+}
+
+#more_link {
+    margin-top:30px;
+    margin-left:20px;
+
+}
+
+#modal_row {
+    margin-bottom:20px;
+}
+
+/* search */
+
+
+
+#searchResult h5 {
+    margin-left:65px;
+    margin-top:-10px;
+}
+
+#searchResult ul {
+    padding:0;
+}
+
+ /* University Page */
+
+#uniContainer {
+    display:none;
+}
+
+#title_image {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#title_image img {
+    max-height:300px;
+    max-width:300px;
+}
+
+#UniContent a {
+    margin-right: 15px;
+    margin-bottom:10px;
+}
+
+#contacts img {
+    margin-bottom:20px;
+}  
+ #socialmedia-links img {
+            
+            margin: 5px;
+            height: 40px;
+            width: 40px;
+        }
+
+#admission_gender img {
+    margin-right: 25px;
+}
+
+
+#tab2 .graph {
+    margin-bottom:20px;
+    margin-top:0px;
+    overflow: hidden;
+}
+
+.uni_checkbox {
+    width:32px;
+    height:32px;
+}
+
+/* Suggestion page */
+
+ #question_menu {
+            margin-top: 30px;
+        }
+        #loader_div {
+            text-align: center;
+        }
+        #loader {
+            margin-top: 20px;
+            width: 150px; /* original 300x300 */
+            height:150px;
+        }
+        #question_map {
+           height:500px;
+           margin-top:50px;
+           margin-right:50px;
+           margin-bottom:50px;
+        }
+
+
+/* CITY PAGE */
+
+#cityContainer {
+    display:none;
+}
+
+#tab0 {
+    margin-top: 20px;
+}
+
+#flag { 
+    margin-left:20px;
+    height:40px;
+            
+}
+
+.mar {
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+#weather_img img  {
+
+   margin-top: 20px;
+   margin-left:20px;
+
+
+}
+
+/* breadcrumb */
+
+#mapBread {
+    background-color:white;
+}
+
+#mapBread:hover {
+    background-color:#F5F5F5;
+    border: 2px solid #2FA4E7;
+}
+/* reviews */
+
+#review-box {
+    margin-top:40px;
+}
+
+#review-box blockquote {
+    margin:10px;
+    border:0;
+    font-size:18px;
+}
+
+#review-box blockquote p {
+    font-size:17px;
+}
+
+.mbottom {
+    background-color:#F2BDB1;
+    color:#C45559;
+    border: 2px solid #C45559;
+    margin:10px;
+    padding:5px 8px;
+}
+
+.mbottom-f {
+        display:inline;
+}
+
+#modButtons {
+    margin-top:10px;
+
+}
+
+/* Places */
+
+#image_div img {
+
+    margin-top:25px;
+    height:165px;
+    width:165px;
+    border: 8px solid #999;
+}
+
+    #image_div img:hover {
+        border: 8px solid #2FA4E7;
+    }
+
+.tabbtn {
+    margin-bottom: 10px;
+}
+
+/*  the city/university pages*/
+#loaderModal {
+    top: 300px; 
+}
+
+#content_page_header {
+    display:none;
+}
+
+
+
+/* Profile page */
+
+.container td {
+    border:0;
+}
+
+/* manage */
+
+
+#MainContent_gvUsers {
+    line-height:30px;
+    
+}
+
+.navbar .brand {
+    margin-bottom: 0;
+}
+
+
+/* fix the button on the manage profile page*/
+.workaround {
+    position: relative;
+    right: -65px;
+    top: -51px;
+}
